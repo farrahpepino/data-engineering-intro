@@ -15,7 +15,7 @@ df.printSchema()
 
 # df.select(['name', 'year']).filter(col('year')>2016).show()
 df.where(~(df['year']>2018)).select(['name', 'year']).show()
-# df.describe().show() # what does this do
+# df.describe().show() 
 
 # df_new = df.withColumn("Price_Times_2", col('selling_price')*2)
 # df_new.show()

@@ -12,7 +12,7 @@ df_drop = df.drop('Experience')
 # df_drop = df_drop.na.drop(how="any", thresh=2)
 # df_drop = df_drop.na.drop(how='any', subset=['Age'])
 df_drop.show()
-
+df.describe().show()
 #na.fill only works for string values
 df_missing = df.na.fill('Missing values', ['name', 'age', 'experience', 'salary']) 
 df_missing.show()
